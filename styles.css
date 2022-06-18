@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    justify-content: center;
+}
+
+.fila1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.fila2izquierda {    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.fila2derecha {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+:root {
+    --margen : 0px 20px 20px 20px;
+}
+
+.jumbotron {
+    background-color: blue;
+    color: white;
+}
+
+form {
+    margin: var(--margen);
+}
+
+a {
+    width: 150px; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.personas {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#pagadores {
+    margin: var(--margen);
+}
+
+#total {
+    margin: var(--margen);
+}
+
+#total_dividido {
+    margin: var(--margen);
+}
